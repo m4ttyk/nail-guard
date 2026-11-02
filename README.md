@@ -6,9 +6,10 @@ Detection runs on your Mac with Apple Vision. Video never leaves the computer.
 
 ## Use
 
-1. Download the zip from [Releases](https://github.com/m4ttyk/nail-guard/releases) and unzip it. It needs macOS 14 or newer on Apple silicon.
-2. The app is not notarized, so remove the quarantine flag: `xattr -d com.apple.quarantine NailGuard.app`
-3. Open it, allow camera access and click Start.
+1. Download the `.dmg` from [Releases](https://github.com/m4ttyk/nail-guard/releases). It needs macOS 14 or newer on Apple silicon.
+2. Open it and drag Nail Guard to Applications.
+3. The app is not notarized, so macOS blocks the first launch. Try to open it, then choose **Open Anyway** in System Settings → Privacy & Security. Or run: `xattr -d com.apple.quarantine /Applications/NailGuard.app`
+4. Allow camera access and click Start.
 
 Press **Esc** to stop during a penalty. If Esc does not respond, click the black screen and press it again.
 
